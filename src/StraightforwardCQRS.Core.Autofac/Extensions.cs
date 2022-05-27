@@ -1,13 +1,12 @@
 using System.Reflection;
 using Autofac;
-using StraightforwardCQRS.Core;
 using StraightforwardCQRS.Core.Commands;
 using StraightforwardCQRS.Core.Events;
 using StraightforwardCQRS.Core.PostProcessors;
 using StraightforwardCQRS.Core.PreProcessors;
 using StraightforwardCQRS.Core.Queries;
 
-namespace StraightforwardCQRS.Autofac.DependencyInjection;
+namespace StraightforwardCQRS.Core.Autofac;
 
 public static class Extensions
 {

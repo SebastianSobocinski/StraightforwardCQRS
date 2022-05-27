@@ -1,5 +1,5 @@
 using Autofac;
-using StraightforwardCQRS.Autofac.DependencyInjection;
+using StraightforwardCQRS.Core.Autofac;
 using StraightforwardCQRS.Core.Commands;
 using StraightforwardCQRS.Samples.Common;
 using StraightforwardCQRS.Samples.Common.Decorators;

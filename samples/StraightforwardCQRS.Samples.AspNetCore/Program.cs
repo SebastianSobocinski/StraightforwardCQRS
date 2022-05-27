@@ -1,5 +1,5 @@
 using FluentValidation.AspNetCore;
-using StraightforwardCQRS.AspNetCore.DependencyInjection;
+using StraightforwardCQRS.Core.AspNetCore;
 using StraightforwardCQRS.Core.Commands;
 using StraightforwardCQRS.Core.Queries;
 using StraightforwardCQRS.Samples.Common;

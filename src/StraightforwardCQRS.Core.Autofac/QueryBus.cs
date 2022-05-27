@@ -1,10 +1,9 @@
 using Autofac;
-using StraightforwardCQRS.Core;
 using StraightforwardCQRS.Core.PostProcessors;
 using StraightforwardCQRS.Core.PreProcessors;
 using StraightforwardCQRS.Core.Queries;
 
-namespace StraightforwardCQRS.Autofac.DependencyInjection;
+namespace StraightforwardCQRS.Core.Autofac;
 
 internal sealed class QueryBus : IQueryBus
 {

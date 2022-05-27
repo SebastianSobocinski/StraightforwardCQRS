@@ -3,7 +3,7 @@ using StraightforwardCQRS.Core.Commands;
 using StraightforwardCQRS.Core.PostProcessors;
 using StraightforwardCQRS.Core.PreProcessors;
 
-namespace StraightforwardCQRS.Autofac.DependencyInjection;
+namespace StraightforwardCQRS.Core.Autofac;
 
 internal sealed class CommandBus : ICommandBus
 {
