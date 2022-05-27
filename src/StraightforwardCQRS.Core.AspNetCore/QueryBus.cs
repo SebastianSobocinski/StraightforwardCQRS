@@ -3,7 +3,7 @@ using StraightforwardCQRS.Core.PostProcessors;
 using StraightforwardCQRS.Core.PreProcessors;
 using StraightforwardCQRS.Core.Queries;
 
-namespace StraightforwardCQRS.AspNetCore.DependencyInjection;
+namespace StraightforwardCQRS.Core.AspNetCore;
 
 internal sealed class QueryBus : IQueryBus
 {

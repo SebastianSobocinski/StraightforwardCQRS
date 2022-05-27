@@ -5,7 +5,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>disable</Nullable>
         <LangVersion>default</LangVersion>
-        <RootNamespace>StraightforwardCQRS.Autofac.DependencyInjection</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

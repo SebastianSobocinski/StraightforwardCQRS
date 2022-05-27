@@ -3,7 +3,7 @@ using StraightforwardCQRS.Core.Events;
 using StraightforwardCQRS.Core.PostProcessors;
 using StraightforwardCQRS.Core.PreProcessors;
 
-namespace StraightforwardCQRS.AspNetCore.DependencyInjection;
+namespace StraightforwardCQRS.Core.AspNetCore;
 
 internal sealed class EventBus : IEventBus
 {

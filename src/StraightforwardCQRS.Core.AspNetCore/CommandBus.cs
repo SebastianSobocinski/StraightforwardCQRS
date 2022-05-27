@@ -1,10 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
-using StraightforwardCQRS.Core;
 using StraightforwardCQRS.Core.Commands;
 using StraightforwardCQRS.Core.PostProcessors;
 using StraightforwardCQRS.Core.PreProcessors;
 
-namespace StraightforwardCQRS.AspNetCore.DependencyInjection;
+namespace StraightforwardCQRS.Core.AspNetCore;
 
 internal sealed class CommandBus : ICommandBus
 {
