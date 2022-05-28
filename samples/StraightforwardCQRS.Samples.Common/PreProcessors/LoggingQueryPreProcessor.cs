@@ -4,7 +4,7 @@ using StraightforwardCQRS.Core.Queries;
 
 namespace StraightforwardCQRS.Samples.Common.PreProcessors;
 
-public class LoggingQueryPreProcessor<TQuery> : IQueryPreProcessor<TQuery> where TQuery: class, IQuery
+public sealed class LoggingQueryPreProcessor<TQuery> : IQueryPreProcessor<TQuery> where TQuery: class, IQuery
 {
     private readonly ILogger<LoggingQueryPreProcessor<TQuery>> _logger;
 

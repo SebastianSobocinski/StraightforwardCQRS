@@ -4,7 +4,7 @@ using StraightforwardCQRS.Core.PostProcessors;
 
 namespace StraightforwardCQRS.Samples.Common.PostProcessors;
 
-public class LoggingPostProcessor<TRequest> : IRequestPostProcessor<TRequest> where TRequest : class, IRequest
+public sealed class LoggingPostProcessor<TRequest> : IRequestPostProcessor<TRequest> where TRequest : class, IRequest
 {
     private readonly ILogger<LoggingPostProcessor<TRequest>> _logger;
 
