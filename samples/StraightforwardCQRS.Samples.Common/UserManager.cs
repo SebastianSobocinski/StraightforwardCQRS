@@ -23,6 +23,12 @@ public class UserManager : IUserManager
         existingUser.Update(user.Name);
     }
 
+    public void Acknowledge(Guid id)
+    {
+        var user = _users.First(x => x.Id == id);
+        user.Acknowledge();
+    }
+
     public void Delete(Guid id)
     {
         var user = _users.First(x => x.Id == id);

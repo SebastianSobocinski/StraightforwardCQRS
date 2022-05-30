@@ -4,13 +4,15 @@ namespace StraightforwardCQRS.Samples.Common;
 
 public interface IUserManager
 {
-    public void Create(Guid id, NewUserDto user);
+    void Create(Guid id, NewUserDto user);
 
-    public void Update(Guid id, NewUserDto user);
+    void Update(Guid id, NewUserDto user);
 
-    public void Delete(Guid id);
+    void Acknowledge(Guid id);
 
-    public UserDto Get(Guid id);
+    void Delete(Guid id);
 
-    public IEnumerable<UserDto> GetAll();
+    UserDto Get(Guid id);
+
+    IEnumerable<UserDto> GetAll();
 }

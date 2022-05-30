@@ -5,7 +5,7 @@ using StraightforwardCQRS.Core.PreProcessors;
 
 namespace StraightforwardCQRS.Samples.Common.PreProcessors;
 
-public class ValidationPreProcessor<TRequest> : IRequestPreProcessor<TRequest> 
+public sealed class ValidationPreProcessor<TRequest> : IRequestPreProcessor<TRequest> 
     where TRequest : class, IRequest
 {
     private readonly IEnumerable<IValidator<TRequest>> _validators;

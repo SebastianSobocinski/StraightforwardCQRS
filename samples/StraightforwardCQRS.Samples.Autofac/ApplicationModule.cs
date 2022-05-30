@@ -1,6 +1,5 @@
 using Autofac;
 using StraightforwardCQRS.Core.Autofac;
-using StraightforwardCQRS.Core.Commands;
 using StraightforwardCQRS.Samples.Common;
 using StraightforwardCQRS.Samples.Common.Decorators;
 using StraightforwardCQRS.Samples.Common.PostProcessors;
@@ -19,6 +18,7 @@ public class ApplicationModule : Module
         builder.AddRequestPreProcessor(typeof(LoggingPreProcessor<>));
         builder.AddRequestPreProcessor(typeof(LoggingCommandPreProcessor<>));
         builder.AddRequestPreProcessor(typeof(LoggingQueryPreProcessor<>));
+        builder.AddRequestPreProcessor(typeof(LoggingEventPreProcessor<>));
         builder.AddRequestPreProcessor(typeof(ValidationPreProcessor<>));
         
         builder.AddRequestPostProcessor(typeof(LoggingQueryPostProcessor<>));
@@ -26,5 +26,6 @@ public class ApplicationModule : Module
         
         builder.AddCommandHandlerDecorator(typeof(UnitOfWorkCommandDecorator<>));
         builder.AddQueryHandlerDecorator(typeof(CachingQueryDecorator<,>));
+        builder.AddEventHandlerDecorator(typeof(CounterEventDecorator<>));
     }
 }
